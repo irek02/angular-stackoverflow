@@ -17,9 +17,9 @@ const myObservable = new Rx.Observable(observer => {
 });
 
 const subscription = myObservable
-  .filter(result => result === 'bird')
+  // .filter(result => result === 'bird')
   .subscribe(result => {
     console.log('observable: ', result);
   });
 
-subscription.unsubscribe();
+// subscription.unsubscribe();
